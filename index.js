@@ -7,6 +7,7 @@ console.log(request.url)
 response.end('Hello NodeJs')
 
 
+response.writeHead(484)
 })
 
 server.listen(3000)
