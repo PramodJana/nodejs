@@ -1,22 +1,25 @@
+const path = require('path')
+
 const express = require('express')
 
 const app = express()
 
 app.get('/',(request,response)=>{
 
-response.json({
-
-  name:'Pramod Jana'
-})
+response.sendFile(path.resolve(__dirname,'index.html'))
 
 })
 
 app.get('/about',(request,response)=>{
 
-response.send({
+response.sendFile(path.resolve(__dirname,'about.html'))
 
-  name:'Pramod Jana'
 })
+
+
+app.get('/contact',(request,response)=>{
+
+response.sendFile(path.resolve(__dirname,'contact.html'))
 
 })
 
