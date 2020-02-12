@@ -1,0 +1,27 @@
+body
+{
+    
+}
+
+.main-container
+{
+    width:100%;
+}
+
+.flex-container
+{
+    width:100%;
+    display:flex;
+    background-color:black;
+    height:100px;
+}
+
+.menu
+{
+    min-width: 200px;
+    color:white;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 35px;
+    
+}
