@@ -1,0 +1,36 @@
+/* https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/ */
+
+
+
+
+
+
+
+.rounded-circle
+{
+    width:150px;
+}
+.name
+{
+    font-size: -webkit-xxx-large;
+}
+.designation
+{
+    font-size: x-large;
+}
+.banner
+{
+    margin-top: 15px;
+    background-color:#a4a4a54f;
+    height: 200px;
+}
+
+.banner-desc
+{
+    padding-top: 25px;
+}
+
+.contact-btnn
+{
+    margin-top:40px;
+}

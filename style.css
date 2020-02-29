@@ -1,0 +1,34 @@
+.container
+{
+    display:flex;
+    background-color: orange;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.a
+{
+    min-width: 500px;
+    height:150px;
+    background-color: lawngreen;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+
+.b
+{
+    min-width: 500px;
+    height:150px;
+    background-color: lightseagreen;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+
+.c
+{
+    min-width: 500px;
+    height:150px;
+    background-color: midnightblue;
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
