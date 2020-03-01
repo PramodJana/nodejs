@@ -1,7 +1,7 @@
-var calculate_square=require('./square');
+var math=require('./math');
 
-calculate_square(10);
-
+math.calculate_square(10);
+math.calculate_cube(10);
 
 
 
