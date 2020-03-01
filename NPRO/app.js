@@ -1,15 +1,11 @@
+var fs= require('fs');
 
-var fs=require('fs');
+// fs.unlink('demo.txt',function()
+// {});
 
-// var r=fs.readFileSync('demo.txt','utf-8');
+// fs.mkdirSync('demo');
 
-fs.readFile('demo.txt','utf-8',function(err,data)
-{
-    console.log(data);
-});
-
-// fs.writeFileSync('demo.txt','This is a simple text file');
-console.log('Hey there');
+// fs.rmdirSync('demo');
 
 
 
@@ -29,7 +25,17 @@ console.log('Hey there');
 
 
 
+// var fs=require('fs');
 
+// // var r=fs.readFileSync('demo.txt','utf-8');
+
+// fs.readFile('demo.txt','utf-8',function(err,data)
+// {
+//     console.log(data);
+// });
+
+// // fs.writeFileSync('demo.txt','This is a simple text file');
+// console.log('Hey there');
 
 
 // var events=require('events');
