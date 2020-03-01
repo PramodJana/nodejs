@@ -1,12 +1,15 @@
-var events=require('events');
 
-var emitter= new events.EventEmitter();
+var fs=require('fs');
 
-emitter.on('publishVideo',function(message){
-    console.log(message);
+// var r=fs.readFileSync('demo.txt','utf-8');
+
+fs.readFile('demo.txt','utf-8',function(err,data)
+{
+    console.log(data);
 });
 
-emitter.emit('publishVideo','ABC has uploaded a new video');
+// fs.writeFileSync('demo.txt','This is a simple text file');
+console.log('Hey there');
 
 
 
@@ -24,6 +27,20 @@ emitter.emit('publishVideo','ABC has uploaded a new video');
 
 
 
+
+
+
+
+
+// var events=require('events');
+
+// var emitter= new events.EventEmitter();
+
+// emitter.on('publishVideo',function(message){
+//     console.log(message);
+// });
+
+// emitter.emit('publishVideo','ABC has uploaded a new video');
 
 
 
