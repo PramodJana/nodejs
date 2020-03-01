@@ -1,14 +1,12 @@
-var math=require('./math');
+var events=require('events');
 
-math.calculate_square(10);
-math.calculate_cube(10);
+var emitter= new events.EventEmitter();
 
+emitter.on('publishVideo',function(message){
+    console.log(message);
+});
 
-
-
-
-
-
+emitter.emit('publishVideo','ABC has uploaded a new video');
 
 
 
@@ -29,16 +27,10 @@ math.calculate_cube(10);
 
 
 
+// var math=require('./math');
 
-
-
-
-
-
-
-
-
-
+// math.calculate_square(10);
+// math.calculate_cube(10);
 
 // // console.log('Hello World!');
 
