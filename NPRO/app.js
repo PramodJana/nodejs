@@ -1,9 +1,37 @@
 var http= require('http');
+var fs= require('fs');
 
-var server= http.createServer(function(req,res)
+var readStream= fs.createReadStream(__dirname+'/demo.txt');
+var chunk_count=0;
+readStream.on('data',function(d)
 {
-    res.writeHead(200,{'Content-Type':'text/plain'});
-    res.end('Hello There!');
-});
+    console.log('This is the read data'+d);
+    chunk_count++;
+    console.log(chunk_count);
+})
 
-server.listen(3000,'127.0.0.1');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var server= http.createServer(function(req,res)
+// {
+//     res.writeHead(200,{'Content-Type':'text/plain'});
+//     res.end('Hello There!');
+// });
+
+// server.listen(3000,'127.0.0.1');
