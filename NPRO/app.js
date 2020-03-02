@@ -1,6 +1,7 @@
 var express= require('express');
 
 var app= express();
+app.set('view engine','ejs');
 
 app.get('/home',function(request,response)
 {
@@ -13,7 +14,7 @@ app.get('/home',function(request,response)
 // });
 app.get('/posts/:id',function(request,response)
 {
-    response.send('This is post : '+request.params.id);
+    response.render('blog',{'blog_post':request.params.id});
 })
 
-app.listen(5000);
+app.listen(5000); 
