@@ -6,5 +6,15 @@
         <h1>
             <%= blog_post%>
         </h1>
+        <h2>
+            <%=blog.post_title %></h2>
+            <h2><%=blog.post_category %></h2>
+            <ul>
+                <% blog.post_editors.forEach(function(item){ %>
+                    <li> <%= item %>  </li>
+
+                <% }); %>
+            </ul>
+        </h2>
     </body>
 </html>

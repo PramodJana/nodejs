@@ -14,7 +14,10 @@ app.get('/home',function(request,response)
 // });
 app.get('/posts/:id',function(request,response)
 {
-    response.render('blog',{'blog_post':request.params.id});
+    var blog={post_title:'Tech Trends',
+               post_category:'Tech',
+            post_editors: ['Pramod','Sia','Shiv']};
+    response.render('blog',{'blog_post':request.params.id,blog:blog});
 })
 
 app.listen(5000); 
