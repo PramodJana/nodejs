@@ -7,9 +7,10 @@
     <body>
 
         <div id="app">
-           <h1 v-if="gate">Gate Open</h1>
-            <h1 v-else-if="!gate">Gate Closed</h1>
-            <button v-on:click="gate=!gate">Push the gate</button>
+          
+            <p v-for="student in students">{{student}}</p>
+            <p v-for="player in players">{{player.name}}:{{player.score}}</p>
+
         </div>
 
         <script type="text/javascript" src="index.js"></script>
