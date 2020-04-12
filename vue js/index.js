@@ -3,16 +3,28 @@ var app=new Vue(
         el:'#app',
 
         data:{
-            students:['Jim','Rob','Ryan','John'], 
-            players:[
-                {name:'Joe',score:5},
-                {name:'Dan',score:3},
-                {name:'Josh',score:2},
-                {name:'Ford',score:7},
-            ]
+           value:100,
+           price:200,
         },
         methods:{
            
+            },
+            
+        }
+);
+
+
+var demo=new Vue(
+    {
+        el:'#demo',
+
+        data:{
+           value:200,
+        },
+        methods:{
+           f1:function(){
+               return app.price;
+           }
             },
             
         }
