@@ -1,7 +1,7 @@
 <template>
  
   <div>
-      {{newMessage}}
+     <h1> {{newMessage}}</h1>
       <students></students>
   </div>
 
@@ -18,6 +18,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+h1{
+  color:green;
+}
 </style>
