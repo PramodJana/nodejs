@@ -6,12 +6,10 @@ var app=new Vue(
             temp:0,
         },
         methods:{
-            inc:function(){
-                this.temp++;
+            keypressed:function(){
+                console.log('key pressed')
             },
-            dec:function(){
-                this.temp--;
-            },
+            
         },
     }
 );
