@@ -4,6 +4,7 @@ var app=new Vue(
 
         data:{
             message:'',
+            status:true,
         },
         methods:{
            
