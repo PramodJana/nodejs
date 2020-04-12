@@ -1,18 +1,15 @@
 <template>
- 
-  <div>
-      {{newMessage}}
-      <students></students>
-  </div>
-
+    <div>
+  <p v-for="student in students">{{student}}</p>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'app',
+  
   data () {
     return {
-      newMessage:'Hello There!'
+      students:['Tom','John','Rob'],
     }
   }
 }
