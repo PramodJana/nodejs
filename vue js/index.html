@@ -9,6 +9,7 @@
         <div id="app">
            <h1 v-if="gate">Gate Open</h1>
             <h1 v-else-if="!gate">Gate Closed</h1>
+            <button v-on:click="gate=!gate">Push the gate</button>
         </div>
 
         <script type="text/javascript" src="index.js"></script>
